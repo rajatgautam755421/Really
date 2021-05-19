@@ -40,7 +40,7 @@ app.get("/", requiresAuth(), (req, res) => {
 });
 // profile
 app.get("/profile", requiresAuth(), (req, res) => {
-  res.send(req.oidc.user);
+  res.render("profile", { data: req.oidc.user });
 });
 
 mongoose.connect(
