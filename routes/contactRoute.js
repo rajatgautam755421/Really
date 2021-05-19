@@ -2,7 +2,7 @@ const router = require("express").Router();
 const contactModel = require("../models/contactSchema");
 
 router.get("/", (req, res) => {
-  res.render("index");
+  res.render("index", { name: "aman" });
 });
 router.post("/", async (req, res) => {
   const user = new contactModel({
