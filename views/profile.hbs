@@ -13,25 +13,28 @@
     <h1 class="container">Hello {{data.nickname}}</h1>
     <h3 class="container">Here is your profile</h3>
 
-<table class="table table-light container mt-5 px-10">
-  <thead px-10>
-    <tr>
-     
-      <th scope="col">Name</th>
-      <th scope="col">Email</th>
-      <th scope="col">Email Verified</th>
-    </tr>
-  </thead>
+<table class="table container">
   <tbody>
     <tr>
-     
-      <td>{{data.nickname}}</td>
-      <td>{{data.email}}</td>
-      <td>{{data.email_verified}}</td>
+      <th scope="row">Name</th>
+      <td >{{data.nickname}}</td>
+    
     </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <th scope="row">Email</th>
+      <td>{{data.email}}</td>
+     
+    </tr>
+    <tr>
+      <th scope="row">Email Verified</th>
+      <td>{{data.email_verified}}</td>
    
+    </tr>
   
   </tbody>
+</table>
 </table>
 </body>
 </html>
