@@ -11,7 +11,7 @@ app.use(express.json());
 app.set("view engine", "hbs");
 //Main route
 app.get("/", (req, res) => {
-  res.send("Hello");
+  res.render("index");
 });
 app.use("/contact", contactRoute);
 
