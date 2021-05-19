@@ -16,7 +16,7 @@ app.get("/", (req, res) => {
 app.use("/contact", contactRoute);
 
 mongoose.connect(
-  "mongodb://localhost:27017/NewModel",
+  "mongodb+srv://rajat:rajat12345@cluster0.d6wqf.mongodb.net/test",
   { useUnifiedTopology: true, useNewUrlParser: true },
   () => {
     try {
