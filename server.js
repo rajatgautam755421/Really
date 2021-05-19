@@ -26,7 +26,6 @@ const config = {
   baseURL: "https://helloappnotruth.herokuapp.com/",
   clientID: "yRccnJkmTlNYPk0yxbz1YAO6JKVjq5k6",
   issuerBaseURL: "https://dev-jr0iokjh.us.auth0.com",
-  redirect_uri: "https://helloappnotruth.herokuapp.com/",
 };
 
 // auth router attaches /login, /logout, and /callback routes to the baseURL
