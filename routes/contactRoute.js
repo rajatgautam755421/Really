@@ -31,7 +31,7 @@ router.post("/", async (req, res) => {
   });
   try {
     const savedContact = await user.save();
-    res.redirect("/contact");
+    res.json(contactModel);
   } catch (error) {
     res.send(error);
   }
