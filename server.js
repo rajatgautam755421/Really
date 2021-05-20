@@ -33,7 +33,7 @@ app.use(auth(config));
 app.get("/hello", (req, res) => {
   res.send("NO");
 });
-app.get("/login", (req, res) => {
+app.get("/", (req, res) => {
   if (req.oidc.isAuthenticated()) {
     res.render("index", { data1: req.oidc.user });
   } else {
