@@ -10,8 +10,38 @@
     <title>Rajat Gautam</title>
 </head>
 <body>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark container-fluid">
+  <a class="navbar-brand" href="/" style="text-decoration: none;">Rajat Gautam</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="/" style="text-decoration: none;">Home <span class="sr-only"></span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" style="text-decoration: none;">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/contact" style="text-decoration: none;">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/profile" style="text-decoration: none;">Profile</a>
+      </li>
+       <li class="nav-item">
+        <a class="btn btn-outline-primary " href="/logout" role="button" style="text-decoration: none;">Logout</a>
+      </li>
+      
+    </ul>
+
+
+
+  
+  </div>
+</nav>
     <h1 class="container">Hello {{data.nickname}}</h1>
-    <h3 class="container">Here is your profile</h3>
+    
 
 <table class="table container">
   <tbody>
