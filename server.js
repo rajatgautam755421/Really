@@ -30,8 +30,8 @@ const config = {
 
 // auth router attaches /login, /logout, and /callback routes to the baseURL
 app.use(auth(config));
-app.get("/hello", (req, res) => {
-  res.send("NO");
+app.get("/login", (req, res) => {
+  res.redirect("/");
 });
 app.get("/", (req, res) => {
   if (req.oidc.isAuthenticated()) {
