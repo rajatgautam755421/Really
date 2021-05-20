@@ -1,6 +1,6 @@
 const router = require("express").Router();
 const contactModel = require("../models/contactSchema");
-const nodeMailer = require("nodemailer");
+const nodemailer = require("nodemailer");
 const { auth } = require("express-openid-connect");
 
 const config = {
