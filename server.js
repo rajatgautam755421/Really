@@ -30,7 +30,7 @@ const config = {
 
 // auth router attaches /login, /logout, and /callback routes to the baseURL
 app.use(auth(config));
-app.get("/", (req, res) => {
+app.get("/hello", (req, res) => {
   res.send("NO");
 });
 app.get("/login", (req, res) => {
