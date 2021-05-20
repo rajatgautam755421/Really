@@ -46,6 +46,10 @@ app.get("/profile", requiresAuth(), (req, res) => {
   res.render("profile", { data: req.oidc.user });
 });
 
+// 404 page not found
+app.use(function (req, res, next) {
+  res.status(404).render("pnf");
+});
 mongoose.connect(
   "mongodb+srv://rajat:rajat12345@cluster0.d6wqf.mongodb.net/test",
   { useUnifiedTopology: true, useNewUrlParser: true },
