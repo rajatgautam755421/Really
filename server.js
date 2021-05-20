@@ -4,6 +4,7 @@ const mongoose = require("mongoose");
 const contactRoute = require("./routes/contactRoute");
 const { auth } = require("express-openid-connect");
 const { requiresAuth } = require("express-openid-connect");
+const nodemailer = require("nodemailer");
 
 const Port = process.env.PORT || 3000;
 
