@@ -31,6 +31,9 @@ const config = {
 // auth router attaches /login, /logout, and /callback routes to the baseURL
 app.use(auth(config));
 app.get("/", (req, res) => {
+  res.send("NO");
+});
+app.get("/login", (req, res) => {
   if (req.oidc.isAuthenticated()) {
     res.render("index", { data1: req.oidc.user });
   } else {
