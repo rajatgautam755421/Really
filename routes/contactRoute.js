@@ -36,18 +36,19 @@ router.post("/", async (req, res) => {
     res.send(error);
   }
 
-  var transporter = nodeMailer.createTransport({
+  var transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
       user: "gautamrajat185@gmail.com",
       pass: "1462962708",
     },
   });
+
   var mailOptions = {
     from: "gautamrajat185@gmail.com",
     to: `${req.body.email}`,
-    subject: "Sending Email",
-    text: `Thankyou ${req.body.name} for contacting us`,
+    subject: "Sending Email using Node.js",
+    text: "That was easy!",
   };
 
   transporter.sendMail(mailOptions, function (error, info) {
