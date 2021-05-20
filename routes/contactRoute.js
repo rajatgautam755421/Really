@@ -40,14 +40,14 @@ router.post("/", async (req, res) => {
     service: "gmail",
     auth: {
       user: "gautamrajat185@gmail.com",
-      pass: 1462962708,
+      pass: "1462962708",
     },
   });
   var mailOptions = {
     from: "gautamrajat185@gmail.com",
     to: `${req.body.email}`,
-    subject: "Contact  us through Emalis",
-    text: `Thankyou ${req.body.name} for contacting us.We will react you soon.`,
+    subject: "Sending Email",
+    text: `Thankyou ${req.body.name} for contacting us`,
   };
 
   transporter.sendMail(mailOptions, function (error, info) {
